@@ -1,9 +1,4 @@
-// HTML
-let div = document.createElement("div");
-let p = document.createElement("p");
-
-// index.js
-
+// app.js
 // Call Express Api.
 const express = require('express'),
 
@@ -50,8 +45,6 @@ app.get('/session', function (req, res, next) {
 })
 
 // The server object listens on port 5000.
-app.listen(5000, function () {
-    console.log("Express Started on Port 5000");
+app.listen(3000, function () {
+    console.log("Express Started on Port 3000");
 });
-
-div.append(p);
