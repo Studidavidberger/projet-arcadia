@@ -1,161 +1,199 @@
 # ECF Projet Arcadia
 
->Le zoo Arcadia est un zoo situé au Nord de la france en Bretagne, cotoyé chaque année par plus de 200K visiteurs essentiellement francais, dans le zoo le panel d’animaux est grand, et ceux ci sont repartis par habitats (savane, jungle, marais).
 
-les veterinaires du zoo font extrement attention a la santé des animaux, chaque jour ils viennent faire des controles sur chaque animal, avant l’ouverture du zoo.
+## Introduction au projet Arcadia :
+Le zoo Arcadia est un zoo situé en Bretagne, cotoyé chaque mois par plus de 200K visiteurs.
 
-Le propriétaire José a envie d’une application web qui permettrai aux visiteurs de visualiser les animaux, leurs états et visualiser les services ainsi que les horaires du zoo.
+<a href="#">
+  <img src="https://github.com/user-attachments/assets/dee0de2d-28d4-444c-ac2c-6eb7346d54efa" width="240">
+</a>
 
-José souhaite avoir une application web dont les couleurs et le thème font penser à de l’écologie.
+>Le projet arcadia consiste en une application web qui permettrai aux visiteurs de visualiser les animaux, leurs états et visualiser les services ainsi que les horaires du zoo, et doit permettre aussi aux employé de suivre et mettre a jour les informations du zoo, comme l’etat des habitats, des animaux, etc...
 
-Le zoo est construit a base de materiaux naturels, l’energie qui fait fonctionner l’emsemble du zoo est naturelle, et redistribuent l’energie en trop le long des sentiers du zoo.
 
-Conception de l’application
+## Visualisation et conception de la webapp :
 
-Apres avoir pris connaissances des besoins utilisateurs, j’ai redessiné sur support papier les scenarios de chaque fonctionnalitées de l’application.
+  - Page documentation ( ficheir README.md) :✅
 
-Afin d’avoir un idée visuel de l’application j’ai réalisé une framework ainsi qu’une maquette des differentes pages du site qui seront accessibles par les visiteurs.
+- mockups, maquettes, et wireframes des [pages](canva.com), `menu` `connexion`, `contact`, `habitats`.❌
 
-Intégration des fonctionnalités suivantes : API interne pour le suivi du traffic publique du site,
+- Schema [UML](hey) des bases de données.✅
+ 
+  - [Demonstration](hey) des fonctionnalités demandés.❌
+ 
+  - Etat de l'intégration des fonctionnalités.❌
+    
+  - Dessiner sur support papier les diagramme UML.❌
+  
+  - installation et configuration d’un SGBD, et d’une base de donnée.❌
+  
+  - Déploiement de l’application.❌
+ 
+  - Fonctionalitées utilisateurs : Poster un commentaire, voir le details des animaux, acceder a un plan interactif du zoo.
+  - Foncrionnalitées employées : Ajouter un commentaire habitat, consulter les infos des animaux, acces dashboard des visites des animaux,   
+  
+  - Sécurité de la BDD et de l'infra web.
 
-billeterie en ligne
 
-## Mettre a jour debian
+## Avant de coder - Installer et configurer son environnement de travail.
 
+installation IDE VSCode et ses plugins de coding.
+Installation parefeu UFW, et système de securité SSH fail2ban.
+Installation de XAMPP.
+Mise a jour du systeme et des librairies d’applications.
+Exportation des variables d’environnements PHP.
+
+
+## Développer la partie dynamique des interfaces :
+  
+  - animations sur les elements de décor du site.❌
+
+  - compteur du nombre de visiteur par animaux❌
+
+  - Animation de l’avis lors de la publication d’un avis d’un visiteur.❌
+
+## Mettre en place une base de données relationnelle
+
+## installation et config BDD mysql
+    - *
+
+## Développer des composants d'accès aux données SQL et NoSQL
+    - *
+
+## Développer des composants métier coté serveur
+    - *
+
+## Documenter le déploiement d'une application dynamique
+    - *
+
+## Intégration :
+  
+  - API interne de suivi du traffic❌
+  
+  - billeterie en ligne❌
+  
+  - carte interactive des trajets possibles dans le zoo.❌
+  
+  - Mise en avant de l’eco-conception des installations du zoo.❌
+
+```Stack technique
+front : HTML 5, CSS <= 5.3.6, JS
+Back-end : PHP PDO, BDD : relationnelle : MySQL
+BDD noSQL : MongoDB
 ```
-apt update
-apt upgrade
-sudo reboot
-```
 
-## la page d’accueil (visiteurs)
+les besoins utilisateurs :
 
-doit comporter une presentation do zoo et quelques images.
+Demande du proprietaire : 
+	- application web qui permetrai aux visiteurs de visualiser les animaux, leurs états et visualiser les
+ services ainsi que les horaires du zoo.
 
-Mention des differents habitats, services, ainsi que les animaux possédé par le zoo.
+	- application web dont les couleurs et le thème font penser à de l’écologie.
 
-Les avis du zoo.
+	- montrer que le zoo est fier de ses valeurs d’ecologistes.
 
-## Le menu de l’application (visiteurs)
+la page d’accueil (visiteurs)
 
-Point de depart de navigation dans l’application contient :
+	- doit comporter une presentation do zoo et quelques images.
 
-\- vue globale des pages du site.
+	- Mention des differents habitats, services, ainsi que les animaux possédé par le zoo.
 
-\- retour vers la page d’accueil
+	- Les avis du zoo.
 
-\- acces a tous les services
+Le menu de l’application (visiteurs)
+Point de depart de navigation dans l’application contient : 
+	- vue globale des pages du site.
 
-\- acces a tout les habitats
+	- retour vers la page d’accueil
 
-\- mini-jeu sur l’ecologie
+	- acces a tous les services
 
-\- connexion (possible uniquement pour les vétérinaires, employé et administrateur)
+	- acces a tout les habitats
 
-\- contact
+	- mini-jeu sur l’ecologie
+
+	- connexion (possible uniquement pour les vétérinaires, employé et administrateur)
+
+	- contact
 
 La vue globale de tous les services (visiteurs)
-
 proposer une interface simple et recapitulative de tous les services que propose le parc.
-
 Les services doivent être configurable depuis l’espace “Administrateur”.
-
 Un service a un nom, une description.
-
-Listes des services :
-
-\- restauration
-
-\- visite des habitats avec un guide (gratuit)
-
-\- visite du zoo en petit train
+Listes des services : 
+- restauration
+- visite des habitats avec un guide (gratuit)
+- visite du zoo en petit train
 
 Vue globale des habitats (visiteurs)
-
 Mention de tous les habitats que propose le zoo et les animaux associées (affiche que l’image et le nom), puis au clic, l’element affiche le detail de l’habitat ainsi que le detail de chaque animal lorsque la souris les survolent.
 
 Habitat : nom, 1,2 images, description, liste d’animaux.
 
-Animal : prenom, race, 1,2 images, habitat affecté.
+Espace visiteur
 
-Fonctionalité UX (visiteurs)
+	- Le visiteur peut visualiser les details de l’animal et l’avis du veterinaire, depuis la page habitat.
 
-Lors du passage du veterinaire, il saisie depuis son espace veterinaire, letat de l’animal, la nourriture proposé, le grammage de la nourriture, la derniere de passage, le détail de l’etat de l’animal (facultatif)
+	- Un visiteur, peut laisser un commentaire depuis la page d’accueil.
 
-Fonctionalité UI (visiteurs)
+	- L’avis affichera un pseudo ainsi qu’un champ “avis” sous forme d’un texte.
 
-Ainsi depuis la page global des habitat le visiteur doit pouvoir visualiser les details de l’animal, mais aussi l’avis du veterinaire.
 
-Fonctionnalité UX (visiteurs)
+Espace employés
 
-Un visiteur, peut laisser un commentaire depuis la page d’accueil, ce qui affichera sur le site juste un pseudo ainsi qu’un champ “avis” sous forme d’un texte. (Necessite validation de l’employé pour etre publié)
+	- L’employé decide des avis a valider, et peut changer les horaires du zoo.
 
-Depuis l’espace employé, le veterinaire pourra autoriser ou non l’avis a apparaitre sur la page d’accueil.
+	- L’employé s’occupe de l’alimentation quotidienne des animaux, il doit pouvoir selectionner un aniaml et lui ajouter une consommation de nourriture, pour ajouter une consommation, il doit fournir la date, l’heure, puis la nourriture donnée , ainsi que la quantité.
 
-Espace administrateur (Administrateur)
 
-L’admin, peut créer un compte de type “employé” et “vétérinaire”,en fournissant un courriel
+Espace Vetos
 
-( nom d’utilisateur du compte), ainsi qu’un mot de passe.
+	- Le veterinaire saisit l’etat de l’animal, sa nourriture ,le grammage, le derniere passage, et le détail de l’etat de l’animal (facultatif).
 
-Réception par mail dans la boite mail de l’employé concerné, précisant son mail, sans le mot de passe, qui lui devra etre demandé en contactant l’administrateur.
+	- Les données animal contiennent : prenom, race, une a deux images, habitat affecté.
 
-L’admin Peut modifier les services, horaires, habitats, et animaux du zoo (creation mise a jour, et suppression, ( CRUD ) )
+	- Le vétérinaire autorise les avis depuis sa page employé.
 
-Dans l’espace admin, emplacement de tous les comptes rendu du veterinaire, avec possibilité d’appliquer filtres de recherches par animal ou par dates.
+	- Il saisit aussi l’etat de l’habitat.
 
-Dashboard affichant le nombre de consultation par animal par les visiteurs.
+	- Peut consulter tout ce que l’animal a pu manger d’apres les saisies de l’employé depuis son espace.
+    
+    - les veterinaires du zoo viennent faire des controles sur chaque animal, avant l’ouverture du zoo, et rapportent ces données sur un espace employé sur le site.
 
-Enfin la creation de compte admin ne doit pas etre possible depuis l’application.
 
-Espace employé (employé)
+Espace administrateurs
 
-Un employé depuis son espace, peut valider ou invalider un avis, peut aussi modifier les services du zoo.
+	- L’admin, peut créer un compte de type “employé” et “vétérinaire”, correspondant a un mail identifiant du compte, initialisation du compte envoyé a l’employé par mail, et mot de passe, donné sur demande par mail.
 
-L’employé s’occupe de l’alimentation quotidienne des animaux, il doit pouvoir selectionner un aniaml et lui ajouter une consommation de nourriture, pour ajouter une consommation, il doit fournir la date, l’heure, puis la nourriture donnée , ainsi que la quantité.
+	- L’admin Peut modifier les services, horaires, habitats, et animaux du zoo.
 
-Espace vétérinaire (veterinaire)
+	- L’admin voit les comptes rendu du veterinaire, avec possibilité d’appliquer filtres de recherches par animal ou par dates.
 
-Le veterinaire passe quotidiennement dans le zoo, il remplira les compte rendu par animaux.
+	- Dashboard affichant le nombre de consultation par animal par les visiteurs.
 
-Peut mettre un commentaire sur les habitats afin qu’il/elle puisse donner son avis son etat, et s’il faut l’ameliorer ou non.
+	- Cette information devra être stocké dans une base de données non relationnelle.
 
-Peut voir depuis sont espace veterinaire et par animal tout ce que l’anial a pu manger vus la saisie de l’employé sur son espace employé.
+	 - Ces données sont exploitées dans le Dashboard administrateur afin que José puisse visualiser quels animaux plaisent le plus.
 
-Connexion (admin, veterinaire, employé)
+	- Enfin la creation de compte admin ne doit pas etre possible depuis l’application web.
 
-Seul une personne de type administrateur, vétérinaire ou encore employé peut se connecter.
 
-Un visiteur ne peut pas devenir utilisateur, et donc, ne peux pas se crée de compte.
+Page Connexion (pour admin, veterinaire, employé)
 
-Se connecter : saisir son nom d’utilisateur (mail) suivi de mot de passe.
+	- Seul une personne de type administrateur, vétérinaire ou encore employé peut se connecter.
 
-Contact (visiteur)
+	- Un visiteur ne peut pas devenir utilisateur, et donc, ne peux pas se crée de compte.
 
-Un visiteur peut contacter le zoo s’il le souhaite.
+	- Se connecter : saisir son nom d’utilisateur (mail) suivi de mot de passe.
 
-Acceder a la page contact, puis un formulaire va demander un titre, un description,ainsi qu’un mail afin d’obtenir une réponse.
+Page Contact (pour visiteur)
 
-la demande est envoyée par mail au zoo, et la réponse d’un employé peut se faire par mail aussi.
+	- Un visiteur peut contacter le zoo s’il le souhaite.
 
-Statistique sur la consultation des habitats (visiteur)
+	- Acceder a la page contact, puis un formulaire va demander un titre, un description,ainsi qu’un mail afin d’obtenir une réponse.
 
-Pour le visiteur, le fait de cliquer sur un animal, fera augmenter la consultation de 1 pour l’animal donné.
+	- la demande est envoyée par mail au zoo, et la réponse d’un employé peut se faire par mail aussi.
 
-Cette information devra être stocké dans une base de données non relationnelle.
 
-Ces données sont exploitées dans le Dashboard administrateur afin que José puisse visualiser
 
-quels animaux plaisent le plus.
-
-Stack technique :
-
-front : HTML 5, CSS <= 5.3.6, JS
-
-Back-end : PhpMyAdmin utilisation de PDO
-
-BDD : relationnelle : MySQL
-
-BDD noSQL : MongoDB
-
-deploiement
+Schema de la base de données :
