@@ -13,24 +13,26 @@ Le zoo Arcadia est un zoo situé en Bretagne, cotoyé chaque mois par plus de 20
 
 ## Visualisation et conception de la webapp :
 
-  - Page documentation ( ficheir README.md) :
+  - Page documentation ( ficheir README.md) :✅
 
-	- plan maquettes, mockup, wireframes des pages.
+- mockups, maquettes, et wireframes des pages, `menu` `connexion`, `contact`, `habitats`.❌
 
-	- Schema UML des bases de données.
+- Schema UML des bases de données.✅
  
-  - Demonstration des fonctionnalités demandés.
+  - Demonstration des fonctionnalités demandés.❌
  
-  - Etat de l'intégration des fonctionnalités.
+  - Etat de l'intégration des fonctionnalités.❌
     
-  - Dessiner sur support papier les diagramme UML.
+  - Dessiner sur support papier les diagramme UML.❌
   
-  - installation et configuration d’un SGBD, et d’une base de donnée.
+  - installation et configuration d’un SGBD, et d’une base de donnée.❌
   
-  - Déploiement de l’application.
+  - Déploiement de l’application.❌
+ 
+  - Fonctionalitées utilisateurs : Poster un commentaire, voir le details des animaux, acceder a un plan interactif du zoo.
+  - Foncrionnalitées employées : Ajouter un commentaire habitat, consulter les infos des animaux, acces dashboard des visites des animaux,   
   
-  - sécurisation du site, filtre anti bot, certificat SSL, blocage des ports non necessaires, base de doonnée relationnelles décentrtalisés.
-
+  - Sécurité de la BDD et de l'infra web.
 
 
 ## Avant de coder - Installer et configurer son environnement de travail.
@@ -42,22 +44,13 @@ Mise a jour du systeme et des librairies d’applications.
 Exportation des variables d’environnements PHP.
 
 
-
-## Maquetter des interfaces utilisateur :
-
-
-- Creer des maquettes du site, mockup, wireframe, maquette sur Figma.
-
-## Réaliser des interfaces utilisateur statiques :
-
-HTML
 ## Développer la partie dynamique des interfaces :
   
-  - animations sur les elements de décor du site.
+  - animations sur les elements de décor du site.❌
 
-  - compteur du nombre de visiteur par animaux
+  - compteur du nombre de visiteur par animaux❌
 
-  - Animation de l’avis lors de la publication d’un avis d’un visiteur.
+  - Animation de l’avis lors de la publication d’un avis d’un visiteur.❌
 
 ## Mettre en place une base de données relationnelle
 
@@ -75,13 +68,13 @@ HTML
 
 ## Intégration :
   
-  - API interne de suivi du traffic
+  - API interne de suivi du traffic❌
   
-  - billeterie en ligne
+  - billeterie en ligne❌
   
-  - carte interactive des trajets possibles dans le zoo.
+  - carte interactive des trajets possibles dans le zoo.❌
   
-  - Mise en avant de l’eco-conception des installations du zoo.
+  - Mise en avant de l’eco-conception des installations du zoo.❌
 
 ```Stack technique
 front : HTML 5, CSS <= 5.3.6, JS
