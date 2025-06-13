@@ -15,11 +15,11 @@ Le zoo Arcadia est un zoo situé en Bretagne, cotoyé chaque mois par plus de 20
 
   - Page documentation ( ficheir README.md) :✅
 
-- mockups, maquettes, et wireframes des pages, `menu` `connexion`, `contact`, `habitats`.❌
+- mockups, maquettes, et wireframes des [pages](canva.com), `menu` `connexion`, `contact`, `habitats`.❌
 
-- Schema UML des bases de données.✅
+- Schema [UML](hey) des bases de données.✅
  
-  - Demonstration des fonctionnalités demandés.❌
+  - [Demonstration](hey) des fonctionnalités demandés.❌
  
   - Etat de l'intégration des fonctionnalités.❌
     
